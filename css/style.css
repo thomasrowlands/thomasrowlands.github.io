@@ -1,0 +1,120 @@
+/* STYLES */
+
+.common__container {
+  color: rgb(25, 25, 25);
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80vh;
+  max-height: 768px;
+  margin: 0 auto;
+  width: 83.33%;
+}
+
+.common__cta {
+  border-bottom: 1px solid rgb(25, 25, 25);
+  color: rgb(25, 25, 25);
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Quicksand', Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.9px;
+  line-height: 28px;
+  margin-block-end: 1em;
+  margin-block-start: 1em;
+  text-decoration: none;
+}
+
+.common__cta:hover {
+  border-bottom-color: rgb(75, 75, 75);
+  color: rgb(75, 75, 75);
+}
+
+.common__cta--first {
+  margin-right: 20px;
+}
+
+.landing {
+  display: flex;
+}
+
+.landing__title {
+  font-family: 'Quicksand', Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  margin-top: 2em;
+}
+
+.landing__tagline {
+  font-family: 'Quicksand', Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 0.9px;
+  line-height: 32px;
+  max-width: 768px;
+  width: 100%;
+}
+
+.information {
+  display: none;
+}
+
+.information__back {
+  cursor: pointer;
+  font-family: 'Quicksand', Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  margin-top: 2em;
+}
+
+.information__back:hover {
+  color: rgb(75, 75, 75);
+}
+
+.information__content {
+  font-family: 'Quicksand', Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.9px;
+  line-height: 28px;
+  max-width: 736px;
+  width: 100%;
+}
+
+.information__content--extended {
+  display: none;
+}
+
+.information__content--link {
+  border-bottom: 1px solid rgb(25, 25, 25);
+  color: rgb(25, 25, 25);
+  text-decoration: none;
+}
+
+.information__content--link:hover {
+  border-bottom-color: rgb(75, 75, 75);
+  color: rgb(75, 75, 75);
+}
+
+@media only screen and (min-width: 768px) {
+  .common__cta {
+    font-size: 16px;
+  }
+
+  .information__content {
+    font-size: 16px;
+  }
+
+  p.information__content--extended {
+    display: inherit;
+  }
+
+  span.information__content--extended {
+    display: inline;
+  }
+
+  .landing__tagline {
+    font-size: 60px;
+    line-height: 64px;
+  }
+}
